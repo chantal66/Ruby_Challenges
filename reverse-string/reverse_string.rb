@@ -12,7 +12,17 @@ class ReverseString
     @str = str
   end
 
+  # def reverse
+  #   str.reverse
+  # end
+
   def reverse
-    str.reverse
+    reversed = []
+
+    string = str.downcase.split('')
+
+    string.size.times { reversed << string.pop }
+
+    reversed.join('')
   end
 end
