@@ -18,6 +18,7 @@ def reverse_int(n)
   end
 end
 
+
 p reverse_int(15) === 51
 p reverse_int(981) === 189
 p reverse_int(500) === 5
