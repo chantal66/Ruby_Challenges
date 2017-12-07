@@ -10,6 +10,7 @@ def vowels(string)
   string.count('aeiou')
 end
 
+
 p vowels('Hi There!')    #--> 3
 p vowels('Why do you ask?')   #--> 4
 p vowels('Why?') #--> 0
