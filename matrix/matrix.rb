@@ -14,9 +14,14 @@
 # //     [12, 13, 14, 5],
 # //     [11, 16, 15, 6],
 # //     [10,  9,  8, 7]]
-def matrix(n)
-  Array.new(n, Array.new(n, n))
+def spiral(n)
+  results = []
+  n.times do
+    results << []
+  end
+  results
 end
 
-# p matrix(2)
-p matrix(4)
+
+p spiral(4)
+
