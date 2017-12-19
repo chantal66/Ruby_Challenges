@@ -20,6 +20,27 @@ def spiral(n)
     results << []
   end
   results
+
+  counter = 1
+  start_column = 0
+  end_column = n - 1
+  start_row = 0
+  end_row = n - 1
+
+  while start_column <= end_column && start_row <= end_row
+    # top row
+    loop do
+      i = start_column
+      results[start_row][i] = counter
+      counter += 1
+    end
+    start_row +=1
+  end
+
+  # right column
+
+
+
 end
 
 
