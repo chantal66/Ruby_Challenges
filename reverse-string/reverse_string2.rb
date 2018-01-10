@@ -3,19 +3,18 @@
 #   splitted = str.downcase.split('')
 #   reversed = []
 #   splitted.size.times { reversed << splitted.pop }
-
 #   reversed.join
-
 # end
 
-# reverse a string with slice
-def reverse_string(str)
- reversed = ''
 
- str.each_char { reversed << str.slice!(-1)}
+# # reverse a string with slice
+# def reverse_string(str)
+#  reversed = ''
 
- reversed
-end
+#  str.each_char { reversed << str.slice!(-1)}
+
+#  reversed
+# end
 
 
 # reverse a string with recursion

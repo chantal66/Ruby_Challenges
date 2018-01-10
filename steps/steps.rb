@@ -20,11 +20,11 @@
 def steps(num)
   n = 1
   while n <= num
-    if n == 1
-      puts ('# ' * n).rjust(n)
-    else
-      puts ('# ' * n).rjust(n)
-    end
+    # if n == 1
+    #   puts ('# ' * n).rjust(n)
+    # else
+      puts ('# ' * n)
+    # end
     n += 1
   end
 end
