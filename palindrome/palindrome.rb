@@ -33,5 +33,6 @@ p palindrome?(d)
 p palindrome?(e)
 p palindrome?('Race fast safe car')
 p palindrome?('1000000001')
+p palindrome?('aaabaaaa') # false
 
 
