@@ -32,3 +32,12 @@ end
 # p steps(2)
 # p steps(4)
 p steps(8)
+
+def reverse_steps(n)
+  while n >= 1
+    puts '# ' * n
+    n -= 1
+  end
+end
+
+p reverse_steps(8)
