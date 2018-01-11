@@ -16,9 +16,19 @@
 def pyramid(height)
   height.times do |n|
     print ' ' * (height - n)
-    puts '#' * (2 * n + 1) 
+    puts '#' * (2 * n + 1)
   end
 
 end
 
 pyramid(4)
+
+def inverse_pyramid(height)
+  while height >= 1
+    puts '#' * (2 * height - 1)
+    height -= 1
+  end
+
+end
+
+p inverse_pyramid(8)
