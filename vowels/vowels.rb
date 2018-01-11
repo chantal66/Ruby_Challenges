@@ -11,6 +11,11 @@ def counting_vowels(str)
   str.count('aeiou')
 end
 
+def count_w_scan(str)
+  str = str.downcase
+  str.scan(/[aeiou]/).length
+
+end
 
 p counting_vowels('Hi There!')
 p counting_vowels('Wh ydo you ask?')
