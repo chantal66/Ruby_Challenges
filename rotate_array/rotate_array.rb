@@ -7,4 +7,17 @@ def rotate_array(n, k)
   (1..n).to_a.rotate(-k)
 end
 
-p rotate_array(7, 3)
+def rotate_array2(nums, k)
+  for i in 1..k
+    nums.push(nums.shift)
+  end
+  nums
+end
+
+def rotate_array3(nums, k)
+  k.times { nums.unshift(nums.pop)}
+end
+
+p rotate_array(3, 2)
+p rotate_array2([1,2,3], 1)
+p rotate_array3([1,2,3], 1)
