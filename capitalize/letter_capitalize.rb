@@ -7,4 +7,9 @@ def letter_capitalize(str)
   str.split(' ').map { |word| word.capitalize }.join(' ')
 end
 
+def letter_capitalize2(str)
+  str.split(' ').map(&:capitalize).join(' ')
+end
+
 p letter_capitalize('hello world')
+p letter_capitalize2('hello world')
